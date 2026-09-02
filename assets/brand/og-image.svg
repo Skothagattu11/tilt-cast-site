@@ -1,0 +1,44 @@
+<!-- TiltCast OG / social preview image — 1200×630 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0D0F11"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="210" x2="1200" y2="210" stroke="#1A1E24" stroke-width="1"/>
+  <line x1="0" y1="420" x2="1200" y2="420" stroke="#1A1E24" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="630" stroke="#1A1E24" stroke-width="1"/>
+  <line x1="800" y1="0" x2="800" y2="630" stroke="#1A1E24" stroke-width="1"/>
+
+  <!-- Glow behind mark -->
+  <ellipse cx="600" cy="270" rx="180" ry="120" fill="#0B23C4" opacity="0.12"/>
+
+  <!-- Mark — scaled large, centered -->
+  <g transform="translate(480, 110) scale(10)">
+    <path d="M6 7.75 Q6 6.6 7.11 6.298 L17.053 3.594 Q18.5 3.2 18.5 4.7 L18.5 19.3 Q18.5 20.8 17.053 20.406 L7.11 17.702 Q6 17.4 6 16.25 Z" fill="#E9ECED"/>
+    <path d="M17.55 6.15 V17.85" stroke="#4A5EF7" stroke-width="1.7" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text
+    x="600"
+    y="448"
+    text-anchor="middle"
+    font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72"
+    font-weight="700"
+    letter-spacing="-2"
+    fill="#E9ECED"
+  >TiltCast</text>
+
+  <!-- Tagline -->
+  <text
+    x="600"
+    y="510"
+    text-anchor="middle"
+    font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28"
+    font-weight="400"
+    letter-spacing="0"
+    fill="#6B7280"
+  >Screen recording. Beautifully cast.</text>
+</svg>

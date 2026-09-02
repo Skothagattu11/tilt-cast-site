@@ -1,0 +1,18 @@
+<!-- TiltCast wordmark — mark + logotype, dark background variant -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40" width="360" height="80">
+  <!-- Mark (scaled from 24×24 to 40×40, centered vertically) -->
+  <g transform="translate(0,0) scale(1.667)">
+    <path d="M6 7.75 Q6 6.6 7.11 6.298 L17.053 3.594 Q18.5 3.2 18.5 4.7 L18.5 19.3 Q18.5 20.8 17.053 20.406 L7.11 17.702 Q6 17.4 6 16.25 Z" fill="#E9ECED"/>
+    <path d="M17.55 6.15 V17.85" stroke="#4A5EF7" stroke-width="1.7" stroke-linecap="round" fill="none"/>
+  </g>
+  <!-- Logotype -->
+  <text
+    x="48"
+    y="27"
+    font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22"
+    font-weight="600"
+    letter-spacing="-0.4"
+    fill="#E9ECED"
+  >TiltCast</text>
+</svg>

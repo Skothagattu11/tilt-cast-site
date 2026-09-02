@@ -1,0 +1,30 @@
+<!-- TiltCast app icon source — export as PNG at 16, 32, 64, 128, 256, 512, 1024px -->
+<!-- macOS icon: rounded rect is applied by the OS — export as square with no rounding -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="#0D0F11"/>
+
+  <!-- Subtle radial glow -->
+  <radialGradient id="glow" cx="62%" cy="50%" r="55%">
+    <stop offset="0%" stop-color="#1B35E8" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="#0D0F11" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1024" height="1024" fill="url(#glow)"/>
+
+  <!-- Mark — centered, ~60% of canvas width -->
+  <!-- Original viewBox 6..18.5 x, 3.594..20.406 y → width=12.5, height=16.8 -->
+  <!-- Scale to ~614px wide: factor = 614/12.5 = 49.12, offset to center -->
+  <g transform="translate(205, 112) scale(49.12)">
+    <path
+      d="M6 7.75 Q6 6.6 7.11 6.298 L17.053 3.594 Q18.5 3.2 18.5 4.7 L18.5 19.3 Q18.5 20.8 17.053 20.406 L7.11 17.702 Q6 17.4 6 16.25 Z"
+      fill="#E9ECED"
+    />
+    <path
+      d="M17.55 6.15 V17.85"
+      stroke="#4A5EF7"
+      stroke-width="1.7"
+      stroke-linecap="round"
+      fill="none"
+    />
+  </g>
+</svg>

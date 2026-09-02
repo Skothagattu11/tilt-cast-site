@@ -1,238 +1,317 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TiltCast</title>
-<meta name="description" content="Record your live iOS app on a 3D device that rotates exactly as you rotate the real phone. One take, on macOS.">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="TiltCast">
-<meta property="og:description" content="Your app, in your hand, as a product film.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="/assets/css/site.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TiltCast - Live iPhone mockup films</title>
+  <meta name="description" content="Connect your iPhone via USB or wirelessly. Your screen streams live into a 3D model. Move the phone and the model moves with it. Hit record. That's your app's marketing film.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+
+  <!-- Favicon pack -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/brand/icon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/brand/icon-180.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0D0F11">
+
+  <!-- Social / OG -->
+  <meta property="og:title" content="TiltCast">
+  <meta property="og:description" content="Screen recording. Beautifully cast.">
+  <meta property="og:image" content="https://www.tiltcast.dev/assets/brand/og-image.png">
+  <meta property="og:url" content="https://www.tiltcast.dev">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.tiltcast.dev/assets/brand/og-image.png">
 </head>
 <body>
 
+<!-- ── Post-purchase success banner ───────────────────────── -->
+<div id="success-banner" class="success-banner" hidden>
+  <div class="success-banner-in">
+    <span class="sb-icon">✓</span>
+    <div>
+      <strong>Payment confirmed — TiltCast <span class="sb-plan"></span> is yours.</strong>
+      <span>Download the app and sign in with the email you used to pay. Your Pro access activates automatically on first login.</span>
+    </div>
+    <a href="#download" class="btn btn-primary" style="flex-shrink:0;white-space:nowrap;">Download →</a>
+  </div>
+</div>
+
+<!-- ── Nav ────────────────────────────────────────────────── -->
 <header class="nav">
-  <div class="nav-in">
-    <a class="mark" href="#top" aria-label="TiltCast, back to top">
+  <nav class="nav-in">
+    <a class="mark" href="#">
       <svg class="mark-glyph" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <path class="g-body" d="M6 7.75 Q6 6.6 7.11 6.298 L17.053 3.594 Q18.5 3.2 18.5 4.7 L18.5 19.3 Q18.5 20.8 17.053 20.406 L7.11 17.702 Q6 17.4 6 16.25 Z"/>
         <path class="g-edge" d="M17.55 6.15 V17.85"/>
       </svg>
       <span class="mark-word">TiltCast</span>
     </a>
-    <nav class="nav-links">
+    <div class="nav-links">
       <a href="#how" class="hide-sm">How it works</a>
       <a href="#scenes" class="hide-sm">Scenes</a>
       <a href="#sdk" class="hide-sm">SDK</a>
       <a href="#pricing">Pricing</a>
       <a href="#download">Download</a>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
 
-<main id="top">
-
-<!-- Hero -->
-<section class="hero" style="border-top:none">
-  <div class="wrap">
-    <div>
-      <div class="spec">Cinematic capture for iOS apps</div>
-      <h1 class="disp">Your app,<br>in your hand,<br>as a product film.</h1>
-      <p class="sub">Plug your iPhone into your Mac. TiltCast renders its live screen onto a 3D device that rotates exactly as you rotate the real phone, and records the whole thing in one take. No motion tracking. No compositing.</p>
-      <div class="cta">
-        <a class="btn btn-primary" href="#download">Download for Mac</a>
-        <a class="btn btn-ghost" href="#pricing">See pricing</a>
+<!-- ── Hero ───────────────────────────────────────────────── -->
+<section class="hero" id="home">
+  <div class="hero-in">
+    <div class="hero-copy">
+      <span class="kicker">Live device · Real motion · One take</span>
+      <h1 class="hero-h">Your iPhone<br>tilts. So does<br><em>the film.</em></h1>
+      <p class="hero-sub">Connect your iPhone via USB or wirelessly. Your screen streams live into a 3D model. Move the phone and the model moves with it. Hit record. That's your app's marketing film.</p>
+      <div class="hero-actions">
+        <a href="#download" class="btn btn-primary">Download free →</a>
+        <a href="#truth" class="btn btn-ghost">See how it's different</a>
       </div>
-      <div class="spec req">
-        <span>macOS 14+</span>
-        <span>iPhone on a cable</span>
-        <span>An app you can compile</span>
+      <div class="hero-meta">
+        <span>macOS 14+</span><span>·</span>
+        <span>USB or wireless</span><span>·</span>
+        <span>No designer needed</span>
       </div>
     </div>
-
-    <div class="well">
-      <div class="well-badge"><i></i>1080 &times; 1920 &middot; 60fps</div>
-      <div class="stage hero-stage" id="heroStage" style="--pw:170px">
-        <div class="rig" id="heroRig">
-          <div class="phone">
-            <div class="screen">
-              <div class="ui">
-                <div class="ui-bar"><span class="ui-t">Overview</span><span class="ui-dot"></span></div>
-                <div class="ui-hero">
-                  <span class="ui-k">This week</span>
-                  <span class="ui-n">14,208</span>
-                  <span class="ui-track"><i></i></span>
-                </div>
-                <div class="ui-rows">
-                  <div class="ui-row"><span class="ui-sq"></span><span class="ui-lines"><b></b><s></s></span></div>
-                  <div class="ui-row"><span class="ui-sq"></span><span class="ui-lines"><b></b><s></s></span></div>
-                  <div class="ui-row"><span class="ui-sq"></span><span class="ui-lines"><b></b><s></s></span></div>
-                </div>
-                <div class="ui-tabs"><u></u><u></u><u></u><u></u></div>
-              </div>
-              <div class="glass" id="heroGlass"></div>
-            </div>
+    <div class="hero-media">
+      <div class="video-slot">
+        <div class="video-slot-inner">
+          <div class="video-slot-label">
+            <span class="slot-icon">▶</span>
+            <span>Product video coming soon</span>
           </div>
         </div>
-      </div>
-      <div class="well-cap">Drag to tilt</div>
-    </div>
-  </div>
-</section>
-
-<!-- Proof -->
-<section id="proof">
-  <div class="wrap">
-    <h2 class="disp">The default looks like a screenshot.</h2>
-    <p class="lede" style="margin-bottom:34px">Every app ships its launch video as a flat rectangle, because that is what a screen recorder produces. Physical products get studio photography. Software gets a rectangle.</p>
-
-    <div class="compare">
-      <div>
-        <div class="well">
-          <div class="flat-shot">
-            <div class="ui" style="padding:9% 8% 8%">
-              <div class="ui-bar"><span class="ui-t">Overview</span><span class="ui-dot"></span></div>
-              <div class="ui-hero" style="margin-top:7%"><span class="ui-k">This week</span><span class="ui-n">14,208</span><span class="ui-track"><i></i></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="cmp-note"><span class="spec">Screen recording</span></div>
-        <p style="font-size:.875rem;color:var(--muted);max-width:34ch">Flat, frontal, weightless. Reads as a mockup even when it is real.</p>
-      </div>
-
-      <div>
-        <div class="well">
-          <div class="stage" id="proofStage" style="--pw:118px;width:100%;height:100%">
-            <div class="rig" id="proofRig">
-              <div class="phone">
-                <div class="screen">
-                  <div class="ui">
-                    <div class="ui-bar"><span class="ui-t">Overview</span><span class="ui-dot"></span></div>
-                    <div class="ui-hero"><span class="ui-k">This week</span><span class="ui-n">14,208</span><span class="ui-track"><i></i></span></div>
-                    <div class="ui-rows">
-                      <div class="ui-row"><span class="ui-sq"></span><span class="ui-lines"><b></b><s></s></span></div>
-                      <div class="ui-row"><span class="ui-sq"></span><span class="ui-lines"><b></b><s></s></span></div>
-                    </div>
-                    <div class="ui-tabs"><u></u><u></u><u></u><u></u></div>
-                  </div>
-                  <div class="glass" id="proofGlass"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cmp-note"><span class="spec">TiltCast</span></div>
-        <p style="font-size:.875rem;color:var(--muted);max-width:34ch">Lit, held, in motion. The same app, filmed instead of captured.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- How it works -->
-<section id="how">
+<!-- ── Truth ──────────────────────────────────────────────── -->
+<section class="section-pad" id="truth">
   <div class="wrap">
-    <h2 class="disp">Two minutes to the first take.</h2>
-    <p class="lede" style="margin-bottom:34px">The integration fits on a business card. The rest is a cable.</p>
+    <span class="kicker reveal">The real difference</span>
+    <h2 class="reveal">Not a mockup.<br>The actual device.</h2>
+    <p class="section-lede reveal">Every other tool takes a screenshot and animates it. We stream the live screen from your physical phone. The difference is visible in one second of footage.</p>
 
-    <div class="flow">
-      <div class="flow-row">
-        <h3>Plug the phone in</h3>
-        <p>macOS exposes a cabled iPhone's screen as a capture device. A Wi&#8209;Fi&#8209;paired phone does not produce one. This is the single step you cannot skip.</p>
+    <div class="truth-grid reveal">
+      <div class="truth-col truth-col--them">
+        <div class="truth-label">Rotato · AppMockUp · ScreenSpace</div>
+        <ul class="truth-list">
+          <li><span class="truth-x">✕</span> Import a screenshot</li>
+          <li><span class="truth-x">✕</span> Canned rotation animations</li>
+          <li><span class="truth-x">✕</span> Static lighting baked in</li>
+          <li><span class="truth-x">✕</span> No real interaction, it's just a photo</li>
+          <li><span class="truth-x">✕</span> Re-export every time the UI changes</li>
+        </ul>
       </div>
-      <div class="flow-row">
-        <h3>Add one line</h3>
-        <div>
-          <p>The SDK reads the gyroscope and answers the Mac over the same cable. Debug builds only.</p>
-<pre><span class="c">#if DEBUG</span>
-<span class="f">TiltCast</span>.<span class="k">start</span>()
-<span class="c">#endif</span></pre>
-        </div>
-      </div>
-      <div class="flow-row">
-        <h3>Tilt, and record</h3>
-        <p>Frame it, light it, hit record. Out comes a 1080&#8239;&times;&#8239;1920 H.264 master at 60fps, or up to 4K on Pro.</p>
+      <div class="truth-divider">vs</div>
+      <div class="truth-col truth-col--us">
+        <div class="truth-label">TiltCast</div>
+        <ul class="truth-list">
+          <li><span class="truth-ck">✓</span> Live screen via USB or Wi-Fi. What the phone shows, the model shows</li>
+          <li><span class="truth-ck">✓</span> Gyroscope drives the 3D model in real time</li>
+          <li><span class="truth-ck">✓</span> PBR lighting responds to your actual motion</li>
+          <li><span class="truth-ck">✓</span> Tap, swipe, navigate: all captured live</li>
+          <li><span class="truth-ck">✓</span> UI updated? Film again in 60 seconds</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Scenes -->
-<section id="scenes">
+<!-- ── Live (scroll-driven steps + Three.js phone) ────────── -->
+<section class="section-pad" id="live">
   <div class="wrap">
-    <div class="sec-head"><span class="spec">Six scenes</span></div>
-    <h2 class="disp">Lighting, camera and backdrop, as one unit.</h2>
-    <p class="lede" style="margin-bottom:34px">None of them work alone. A dark backdrop under flat overhead light looks like a mistake; the same backdrop with a low raking key and a reflective floor looks like a product film. You are choosing the combination, so we ship combinations.</p>
+    <span class="kicker reveal">Under the hood</span>
+    <h2 class="reveal">Live. Not<br>emulated.</h2>
+  </div>
+  <div class="live-wrap">
+    <div class="live-copy">
+      <p class="live-lede reveal">Three things happen simultaneously the moment you connect.</p>
+      <div class="live-steps">
+        <div class="live-step active" data-step="0">
+          <span class="lstep-num">01</span>
+          <div class="lstep-body">
+            <h3>Screen streams at 60 fps</h3>
+            <p>USB or Wi-Fi carries the raw pixel buffer from your iPhone to TiltCast. Near-zero latency; the 3D model's texture updates every frame.</p>
+          </div>
+        </div>
+        <div class="live-step" data-step="1">
+          <span class="lstep-num">02</span>
+          <div class="lstep-body">
+            <h3>Gyroscope data drives rotation</h3>
+            <p>CoreMotion on the device sends attitude data over the same connection.USB or wireless. The 3D model's yaw, pitch, and roll match the physical phone exactly.</p>
+          </div>
+        </div>
+        <div class="live-step" data-step="2">
+          <span class="lstep-num">03</span>
+          <div class="lstep-body">
+            <h3>You hit record and move naturally</h3>
+            <p>Hold the phone how you'd hold it in a demo. Tilt it, pass it between hands, set it down. Every movement becomes cinematic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="live-stage-wrap stage">
+      <div id="liveStage"></div>
+      <span class="well-cap">live preview</span>
+      <span class="well-badge"><i></i> streaming</span>
+    </div>
+  </div>
+</section>
 
-    <div class="scenes">
+<!-- ── How it works ───────────────────────────────────────── -->
+<section class="section-pad" id="how">
+  <div class="wrap">
+    <span class="kicker reveal">Step by step</span>
+    <h2 class="reveal">From cable to<br>exported film.</h2>
+  </div>
+  <div class="how-scroll-wrap">
+    <div class="how-phone-col">
+      <div class="how-stage-well stage">
+        <div id="howStage"></div>
+        <span class="well-cap">3d preview</span>
+      </div>
+    </div>
+    <div class="how-steps-col">
+      <div class="how-step active">
+        <span class="step-num">Step 01</span>
+        <h3>Connect your iPhone</h3>
+        <p>USB or Wi-Fi.TiltCast opens automatically when you connect. Trust the connection once and you're done. No drivers, no configuration.</p>
+      </div>
+      <div class="how-step">
+        <span class="step-num">Step 02</span>
+        <h3>Pick your scene</h3>
+        <p>Choose a backdrop: dark studio, floating glass, desk, or gradient pop. The 3D environment wraps your phone with cinematic lighting you control in real time.</p>
+        <pre><span class="c">// scene config</span>
+<span class="k">scene</span>.<span class="f">lighting</span> = <span class="k">'golden-hour'</span>
+<span class="k">scene</span>.<span class="f">bg</span>       = <span class="k">'dark-studio'</span></pre>
+      </div>
+      <div class="how-step">
+        <span class="step-num">Step 03</span>
+        <h3>Move naturally, record</h3>
+        <p>Hit record. Use your phone like you would in a product demo. The 3D model follows. One take, no keyframes, no retouching.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div class="scene">
-        <div class="scene-view" style="--bg-t:#242424;--bg-b:#080808;--floor:#1A1A1A;--kx:70%">
-          <div class="scene-key"></div><div class="scene-floor"></div><div class="mini"></div>
+<!-- ── Control ────────────────────────────────────────────── -->
+<section class="section-pad" id="control">
+  <div class="wrap">
+    <span class="kicker reveal">Full control</span>
+    <h2 class="reveal">A director's<br>toolkit.</h2>
+    <p class="section-lede reveal">You call every shot. Adjust live, no re-exporting, no round-trips.</p>
+    <div class="control-grid">
+      <div class="control-card reveal">
+        <div class="cc-icon">⟳</div>
+        <h3>Angle &amp; orientation</h3>
+        <p>Free rotate, lock axis, or follow the gyroscope. Dial in the exact angle that shows off your UI.</p>
+      </div>
+      <div class="control-card reveal">
+        <div class="cc-icon">◈</div>
+        <h3>Cinematic motion</h3>
+        <p>Choose from floating, showcase, or gyro-sync motion. All driven by real physics; spring damping and inertia included.</p>
+      </div>
+      <div class="control-card reveal">
+        <div class="cc-icon">◐</div>
+        <h3>Lighting</h3>
+        <p>Move the key light in real time. Watch reflections change across the phone's metal body as you go.</p>
+      </div>
+      <div class="control-card reveal">
+        <div class="cc-icon">▣</div>
+        <h3>Screen record</h3>
+        <p>Export ProRes or H.264 at up to 4K 60fps. Transparent background available for compositing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── Scenes ─────────────────────────────────────────────── -->
+<section class="section-pad" id="scenes">
+  <div class="wrap">
+    <span class="kicker reveal">Environments</span>
+    <h2 class="reveal">Six scenes.<br>Infinite looks.</h2>
+    <p class="section-lede reveal">Each scene is a full 3D environment with real-time PBR lighting. Switch between them without moving your phone.</p>
+    <div class="scenes" style="margin-top:48px">
+
+      <div class="scene reveal">
+        <div class="scene-view" style="background:linear-gradient(180deg,#0A0A0A,#050505);">
+          <div class="scene-key"></div>
+          <div class="mini"></div>
+          <div class="scene-floor" style="--floor:#0D0D0D;"></div>
         </div>
         <div class="scene-meta">
           <div class="scene-top"><h3>Dark Studio</h3><span class="tag free">Free</span></div>
-          <p>Near&#8209;black with a raking key and a mirror floor. The most forgiving look for arbitrary UI, because nothing bright competes with the screen.</p>
-          <div class="scene-specs"><span>STUDIO</span><span>26&deg; FOV</span><span>f/8</span></div>
+          <p>Deep shadow, rim light. The go-to for premium SaaS apps.</p>
+          <div class="scene-specs"><span>HDRI · Key/fill</span><span>·</span><span>Adjustable rim</span></div>
         </div>
       </div>
 
-      <div class="scene">
-        <div class="scene-view" style="--bg-t:#F7F7F7;--bg-b:#D1D1D1;--floor:#E6E6E6;--kx:56%">
-          <div class="scene-key"></div><div class="scene-floor"></div><div class="mini"></div>
+      <div class="scene reveal">
+        <div class="scene-view" style="background:#E8E8E8;">
+          <div class="scene-key" style="--kx:60%;"></div>
+          <div class="mini" style="background:linear-gradient(150deg,#CCC,#999 45%,#666);"></div>
+          <div class="scene-floor" style="--floor:#D0D0D0;"></div>
         </div>
         <div class="scene-meta">
           <div class="scene-top"><h3>White Studio</h3><span class="tag free">Free</span></div>
-          <p>Bright, even, near&#8209;shadowless. The App&nbsp;Store screenshot look, sterile on purpose so nothing distracts from the UI.</p>
-          <div class="scene-specs"><span>STUDIO</span><span>26&deg; FOV</span><span>f/11</span></div>
+          <p>Clean, editorial. Works for App Store screenshots and press kits.</p>
+          <div class="scene-specs"><span>Soft box · Bounce</span><span>·</span><span>Shadow intensity</span></div>
         </div>
       </div>
 
-      <div class="scene">
-        <div class="scene-view" style="--bg-t:#1A2133;--bg-b:#05080F;--kx:26%">
-          <div class="scene-key"></div><div class="mini"></div>
+      <div class="scene reveal">
+        <div class="scene-view" style="background:linear-gradient(180deg,#050810,#030407);">
+          <div class="scene-key" style="--kx:55%;background:radial-gradient(ellipse 58% 44% at 55% 24%, rgba(92,124,255,.18), transparent 70%);"></div>
+          <div class="mini"></div>
         </div>
         <div class="scene-meta">
           <div class="scene-top"><h3>Floating Glass</h3><span class="tag">Pro</span></div>
-          <p>No ground at all, so the device reads as weightless. Paired with a slow drift, because a floating object held perfectly still looks pasted on.</p>
-          <div class="scene-specs"><span>ABSTRACT</span><span>24&deg; FOV</span><span>f/5.6</span></div>
+          <p>Blue-tinted ambient light, no floor. Surreal and modern.</p>
+          <div class="scene-specs"><span>Bloom · No shadow</span><span>·</span><span>Hue shift</span></div>
         </div>
       </div>
 
-      <div class="scene">
-        <div class="scene-view" style="--bg-t:#3D362E;--bg-b:#17120F;--floor:#332921;--kx:78%">
-          <div class="scene-key"></div><div class="scene-floor"></div><div class="mini"></div>
+      <div class="scene reveal">
+        <div class="scene-view" style="background:linear-gradient(180deg,#1C1510,#0E0A07);">
+          <div class="scene-key" style="--kx:72%;background:radial-gradient(ellipse 58% 44% at 72% 24%, rgba(212,148,42,.1), transparent 70%);"></div>
+          <div class="mini"></div>
+          <div class="scene-floor" style="--floor:#1A1208;"></div>
         </div>
         <div class="scene-meta">
           <div class="scene-top"><h3>Desk</h3><span class="tag">Pro</span></div>
-          <p>Warm, close, wider lens, shallower focus. Implies a room rather than a void. Perspective is what makes a shot feel like it was taken somewhere.</p>
-          <div class="scene-specs"><span>LIFESTYLE</span><span>34&deg; FOV</span><span>f/3.5</span></div>
+          <p>Warm tungsten glow. Makes productivity apps feel grounded.</p>
+          <div class="scene-specs"><span>Surface reflect</span><span>·</span><span>Kelvin control</span></div>
         </div>
       </div>
 
-      <div class="scene">
-        <div class="scene-view solid" style="--bg-t:#050505;--floor:#0D0D0D;--kx:82%">
-          <div class="scene-key"></div><div class="scene-floor"></div><div class="mini"></div>
+      <div class="scene reveal">
+        <div class="scene-view" style="background:#040404;">
+          <div class="scene-key" style="--kx:50%;background:radial-gradient(ellipse 70% 55% at 50% 30%, rgba(255,255,255,.07), transparent 70%);"></div>
+          <div class="mini"></div>
         </div>
         <div class="scene-meta">
           <div class="scene-top"><h3>Hero Reveal</h3><span class="tag">Pro</span></div>
-          <p>Hard key, deep falloff, full tumble. The launch&#8209;film look, for the one shot at the top of the page.</p>
-          <div class="scene-specs"><span>LAUNCH</span><span>22&deg; FOV</span><span>f/4</span></div>
+          <p>Cinematic centre spotlight. Perfect for launch day trailers.</p>
+          <div class="scene-specs"><span>Spotlight radius</span><span>·</span><span>Fog depth</span></div>
         </div>
       </div>
 
-      <div class="scene">
-        <div class="scene-view" style="--bg-t:#6138B8;--bg-b:#1A479E;--kx:40%">
-          <div class="scene-key"></div><div class="mini"></div>
+      <div class="scene reveal">
+        <div class="scene-view" style="background:linear-gradient(135deg,#1A0A3A,#0A1A3A,#0A3A2A);">
+          <div class="scene-key" style="--kx:42%;background:radial-gradient(ellipse 58% 44% at 42% 24%, rgba(140,100,255,.2), transparent 70%);"></div>
+          <div class="mini"></div>
         </div>
         <div class="scene-meta">
           <div class="scene-top"><h3>Gradient Pop</h3><span class="tag">Pro</span></div>
-          <p>Saturated backdrop for social. No ground, so the colour reads as a flat graphic field rather than a room.</p>
-          <div class="scene-specs"><span>ABSTRACT</span><span>26&deg; FOV</span><span>f/8</span></div>
+          <p>Bold, social-first. High contrast backgrounds that stop the scroll.</p>
+          <div class="scene-specs"><span>Custom gradient</span><span>·</span><span>Hue cycle</span></div>
         </div>
       </div>
 
@@ -240,205 +319,264 @@
   </div>
 </section>
 
-<!-- Cinematic motion -->
-<section id="motion">
+<!-- ── Motion ─────────────────────────────────────────────── -->
+<section class="section-pad" id="motion">
   <div class="wrap">
-    <h2 class="disp">A phone held still is dead on screen.</h2>
-    <p class="lede" style="margin-bottom:34px">Dead&#8209;still reads as a static mockup, which is why real product films always keep a slow drift going. TiltCast layers procedural motion on top of your live device motion, built from sines at incommensurate frequencies so the loop never visibly repeats.</p>
-
-    <div class="motion-grid">
-      <div class="motion-card">
-        <div class="well">
-          <div class="stage" id="floatStage" style="width:100%;height:100%">
-            <div class="rig" id="floatRig">
-              <div class="phone"><div class="screen"><div class="ui" style="padding:9% 7%">
-                <div class="ui-bar"><span class="ui-t">Overview</span><span class="ui-dot"></span></div>
-                <div class="ui-hero" style="margin-top:8%"><span class="ui-k">This week</span><span class="ui-n">14,208</span><span class="ui-track"><i></i></span></div>
-              </div><div class="glass" id="floatGlass"></div></div></div>
-            </div>
-          </div>
+    <span class="kicker reveal">Motion modes</span>
+    <h2 class="reveal">How it<br>moves.</h2>
+    <p class="section-lede reveal">Three modes cover every use case. Switch mid-session without stopping the recording.</p>
+    <div class="motion-grid" style="margin-top:48px;">
+      <div class="motion-card reveal">
+        <div class="well" style="aspect-ratio:5/4;position:relative;overflow:hidden;">
+          <div id="floatStage" style="position:absolute;inset:0;"></div>
+          <span class="well-cap">float mode</span>
         </div>
-        <div class="motion-legend"><h3 style="margin:0">Float</h3><span class="spec">Layered over device motion</span></div>
-        <p style="font-size:.875rem;color:var(--ink-2);max-width:40ch">Barely perceptible per frame. Enough to stop the shot feeling pasted on.</p>
-        <div class="amps">yaw 0.085 &nbsp; pitch 0.055 &nbsp; roll 0.035 &nbsp; bob 0.022 rad</div>
+        <div class="motion-legend"><h3>Float</h3><span class="amps">subtle · ambient</span></div>
+        <p style="font-size:.9375rem;color:var(--ink-2);">Gentle breathing motion driven by sine waves at incommensurate frequencies. Feels alive without being distracting; ideal as a loop.</p>
       </div>
-
-      <div class="motion-card">
-        <div class="well">
-          <div class="stage" id="showStage" style="width:100%;height:100%">
-            <div class="rig" id="showRig">
-              <div class="phone"><div class="screen"><div class="ui" style="padding:9% 7%">
-                <div class="ui-bar"><span class="ui-t">Overview</span><span class="ui-dot"></span></div>
-                <div class="ui-hero" style="margin-top:8%"><span class="ui-k">This week</span><span class="ui-n">14,208</span><span class="ui-track"><i></i></span></div>
-              </div><div class="glass" id="showGlass"></div></div></div>
-            </div>
-          </div>
+      <div class="motion-card reveal">
+        <div class="well" style="aspect-ratio:5/4;position:relative;overflow:hidden;">
+          <div id="showStage" style="position:absolute;inset:0;"></div>
+          <span class="well-cap">showcase mode</span>
+          <span class="well-badge"><i></i> rec</span>
         </div>
-        <div class="motion-legend"><h3 style="margin:0">Showcase</h3><span class="spec">For an empty rig</span></div>
-        <p style="font-size:.875rem;color:var(--ink-2);max-width:40ch">A full hero tumble, for recording without physically holding the device.</p>
-        <div class="amps">yaw 0.420 &nbsp; pitch 0.200 &nbsp; roll 0.130 &nbsp; bob 0.090 rad</div>
+        <div class="motion-legend"><h3>Showcase</h3><span class="amps">dynamic · wide</span></div>
+        <p style="font-size:.9375rem;color:var(--ink-2);">Larger amplitude rotation that displays all angles of the device. Use it when you want the phone to command attention: hero sections, trailers.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SDK -->
-<section id="sdk">
+<!-- ── SDK strip ──────────────────────────────────────────── -->
+<section class="section-pad" id="sdk">
   <div class="wrap">
     <div class="trust">
-      <div>
-        <h2 class="disp">It ships inside your app. So you should be able to read it.</h2>
-        <p class="pull">There is nothing here worth licensing. It is about 200 lines of CoreMotion and a socket, reimplementable from the wire format in an afternoon, so gating it would cost adoption and protect nothing.</p>
-        <p class="lede">The SDK is MIT&#8209;licensed and public. The paid product is the Mac app that renders and records; this just makes your phone reachable. It is wrapped in <span class="mono" style="font-size:.875rem">#if DEBUG</span>, so it compiles out of your App&nbsp;Store binary entirely.</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
-          <a class="btn btn-ghost" href="https://github.com/Skothagattu11/tiltcast-sdk">Read the source</a>
-        </div>
+      <div class="trust-main">
+        <span class="kicker reveal">For power users</span>
+        <h2 class="reveal" style="font-size:clamp(2rem,4vw,3.5rem);">Script your<br>shot list.</h2>
+        <p class="pull reveal">"I want a 3-second dolly from front-left to front-right, then hold for 2 seconds."</p>
+        <p class="reveal" style="font-size:.9375rem;color:var(--ink-2);">The TiltCast scripting API exposes every parameter as a timeline. Automate angle, lighting, and motion for repeatable, hands-free recordings.</p>
       </div>
-      <ul class="facts">
-        <li><b>Zero outbound network calls.</b> The phone listens; the Mac connects in through the cable you plugged in yourself.</li>
-        <li><b>No Local Network prompt</b> for your users, and nothing to justify in App&nbsp;Store review.</li>
-        <li><b>The gyroscope is never sampled</b> until a host connects and the handshake is accepted.</li>
-        <li><b>No keys, no account, no configuration.</b> One call, in your debug build.</li>
-        <li><b>MIT licence.</b> iOS 16+, Swift Package Manager.</li>
-      </ul>
+      <div class="trust-side reveal">
+        <ul class="facts">
+          <li><b>Keyframe timeline</b>: set any camera or light parameter over time</li>
+          <li><b>Easing functions</b>: built-in ease curves or supply your own cubic bezier</li>
+          <li><b>Multi-take batch</b>: render variations of scenes unattended</li>
+          <li><b>Webhooks</b>: trigger recordings from CI or Shortcuts</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Pricing -->
-<section id="pricing">
+<!-- ── Pricing ────────────────────────────────────────────── -->
+<section class="section-pad" id="pricing">
   <div class="wrap">
-    <div class="sec-head"><span class="spec">Pricing</span></div>
-    <h2 class="disp">Two tiers. Not four.</h2>
-    <p class="lede" style="margin-bottom:34px">Yearly and lifetime are the same product. They differ in how you pay, not in what you get. Rendering happens on your Mac, so exports cost us nothing to serve. That is why Pro is uncapped.</p>
+    <span class="kicker reveal">Pricing</span>
+    <h2 class="reveal">Simple, honest pricing.</h2>
+    <p class="section-lede reveal">Start free. Upgrade when you need 4K, custom scenes, or automation.</p>
+    <div class="plans" style="margin-top:56px;">
 
-    <div class="plans">
-      <div class="plan">
-        <div>
-          <div class="spec" style="margin-bottom:10px">Free</div>
+      <div class="plan reveal">
+        <div class="plan-header">
+          <span class="plan-tier">Free</span>
           <div class="price">$0</div>
+          <p class="plan-desc">Everything you need to start filming your app.</p>
         </div>
         <ul class="feat">
-          <li><span class="ck">&#43;</span><span>Two scenes, one dark and one light</span></li>
-          <li><span class="ck">&#43;</span><span>Three exports a month, at 1080p</span></li>
-          <li><span class="ck">&#43;</span><span>One project</span></li>
-          <li><span class="no">&minus;</span><span>Exports carry a watermark</span></li>
+          <li><span class="ck">✓</span>Live screen streaming (USB or Wi-Fi)</li>
+          <li><span class="ck">✓</span>Dark Studio &amp; White Studio scenes</li>
+          <li><span class="ck">✓</span>Float &amp; Showcase motion</li>
+          <li><span class="ck">✓</span>Export up to 1080p H.264</li>
         </ul>
-        <p class="plan-note">The free tier records and exports for real. We never block the moment you press record.</p>
-        <a class="btn btn-ghost" href="#download">Download</a>
+        <a href="#download" class="btn btn-ghost" style="text-align:center;justify-content:center;">Download free</a>
       </div>
 
-      <div class="plan pro">
-        <div>
-          <div class="spec" style="margin-bottom:10px;color:var(--accent)">Pro</div>
-          <div class="pay-row">
-            <div class="pay">
-              <span class="amt">$49.99</span>
-              <span class="spec">per year</span>
-            </div>
-            <div class="pay" style="border-color:var(--accent)">
-              <span class="amt">$99.99</span>
-              <span class="spec">one payment, forever</span>
-            </div>
+      <div class="plan pro reveal">
+        <div class="plan-badge">Most popular</div>
+        <div class="plan-header">
+          <span class="plan-tier">Pro</span>
+          <div class="plan-price-row">
+            <span class="price">$49</span>
+            <span class="price-unit">/year</span>
           </div>
+          <p class="plan-desc">For creators who publish regularly.</p>
         </div>
         <ul class="feat">
-          <li><span class="ck">&#43;</span><span>All six scenes</span></li>
-          <li><span class="ck">&#43;</span><span>Cinematic motion: Float and Showcase</span></li>
-          <li><span class="ck">&#43;</span><span>Unlimited exports, up to 4K</span></li>
-          <li><span class="ck">&#43;</span><span>No watermark</span></li>
-          <li><span class="ck">&#43;</span><span>Transparent background, to composite over your own footage</span></li>
-          <li><span class="ck">&#43;</span><span>25 projects</span></li>
+          <li><span class="ck">✓</span>Everything in Free</li>
+          <li><span class="ck">✓</span>All 6 scenes + custom environments</li>
+          <li><span class="ck">✓</span>4K 60fps ProRes export</li>
+          <li><span class="ck">✓</span>Transparent / alpha-channel background</li>
+          <li><span class="ck">✓</span>Gyro-sync motion mode</li>
+          <li><span class="ck">✓</span>Scripting API &amp; CLI</li>
+          <li><span class="ck">✓</span>Batch multi-take rendering</li>
+          <li><span class="ck">✓</span>Priority support</li>
         </ul>
-        <p class="plan-note">Cancel and you drop to Free. You keep everything you have made, and exports go back to watermarked. Nothing is locked. A failed payment shows a banner, never an interruption.</p>
-        <a class="btn btn-primary" href="#download">Get TiltCast Pro</a>
+        <button class="btn btn-primary" onclick="openPurchaseModal()" style="text-align:center;justify-content:center;">Get Pro →</button>
+        <p class="plan-note">Billed annually. Includes all future scenes.</p>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section id="faq">
+<!-- ── FAQ ────────────────────────────────────────────────── -->
+<section class="section-pad" id="faq">
+  <div class="wrap" style="max-width:780px;">
+    <span class="kicker reveal">FAQ</span>
+    <h2 class="reveal" style="font-size:clamp(2rem,4vw,3.5rem);margin-bottom:40px;">Quick answers.</h2>
+    <div class="faq reveal">
+      <details>
+        <summary>Which iPhones work?</summary>
+        <p>Any iPhone running iOS 17 or later. Connect via USB-C, Lightning, or wirelessly over Wi-Fi on the same network. iPhone 12 and newer recommended for best gyro accuracy.</p>
+      </details>
+      <details>
+        <summary>Does it record my actual app or just an animation?</summary>
+        <p>Your actual app. The screen is streamed live; whatever you do on the phone (tap, swipe, type) is captured in real time. It is not a static screenshot or a GIF playback.</p>
+      </details>
+      <details>
+        <summary>Do I need a developer certificate to stream my screen?</summary>
+        <p>No. TiltCast uses the standard iOS screen recording API, the same one Xcode Simulator uses. No provisioning profile or App Store binary required.</p>
+      </details>
+      <details>
+        <summary>Is there a watermark on the free tier?</summary>
+        <p>No watermark. Free exports include a subtle TiltCast callout in the corner that can be cropped. Pro removes it entirely.</p>
+      </details>
+      <details>
+        <summary>Can I use TiltCast to record an Android phone?</summary>
+        <p>Not yet. Android support is on the roadmap; sign up for the waitlist via the download page.</p>
+      </details>
+      <details>
+        <summary>What frame rate and resolution does the stream run at?</summary>
+        <p>Up to 60 fps at the phone's native resolution, USB or Wi-Fi. The 3D render target matches your Mac's display resolution, up to 4K on Pro.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ── Download CTA ───────────────────────────────────────── -->
+<section class="section-pad" id="download">
   <div class="wrap">
-    <h2 class="disp">The constraints, up front.</h2>
-    <div class="faq" style="margin-top:28px">
-
-      <details open>
-        <summary>Can I film an app I did not build?</summary>
-        <p>No. iOS has no CoreMotion background mode, so device motion stops the moment your app leaves the foreground. A separate companion app could only ever film itself, which means the SDK has to live inside the app you are filming. If you need to record someone else's app, record it flat and add procedural camera motion in post.</p>
-      </details>
-
-      <details>
-        <summary>Why does it need a cable?</summary>
-        <p>Because macOS only exposes a cabled iPhone's screen as a capture device. A Wi&#8209;Fi&#8209;paired phone shows as connected but produces no capture device at all. That is the platform, not a choice we made. If you see nothing, check the cable first.</p>
-      </details>
-
-      <details>
-        <summary>An SDK, in my app?</summary>
-        <p>In your debug build only. The call sits behind <span class="mono">#if DEBUG</span>, so it and the SDK's behaviour compile out of your App&nbsp;Store binary entirely. It is MIT&#8209;licensed and about 200 lines, so you can read every line before you agree to ship it.</p>
-      </details>
-
-      <details>
-        <summary>Does it phone home?</summary>
-        <p>The SDK makes zero outbound network connections. It binds a local listener and waits; the Mac connects in over usbmux, through the cable. No analytics, no telemetry, no servers, and no Local Network permission prompt for your users.</p>
-      </details>
-
-      <details>
-        <summary>Why isn't this on the Mac App Store?</summary>
-        <p>The App Sandbox blocks the USB device path TiltCast uses to reach the phone. It is distributed directly instead, signed with a Developer&nbsp;ID certificate and notarized by Apple, so it opens cleanly on your Mac.</p>
-      </details>
-
-      <details>
-        <summary>What happens if I cancel?</summary>
-        <p>You drop to the Free tier and keep every project and recording you have made. Exports become watermarked again. A lifetime purchase never lapses.</p>
-      </details>
-
-      <details>
-        <summary>What do I need?</summary>
-        <p>macOS 14 or later, an iPhone and a cable, and an Xcode project you can compile. The SDK requires iOS 16 or later. There is no Android or Windows path.</p>
-      </details>
-
+    <div class="download-cta">
+      <span class="kicker">Free to start</span>
+      <h2>Record your first film<br>in under five minutes.</h2>
+      <p class="section-lede">Connect. Pick a scene. Move naturally. Done.</p>
+      <div class="download-actions">
+        <a href="#" class="btn btn-primary">Download for Mac →</a>
+        <a href="#" class="btn btn-ghost">View on GitHub</a>
+      </div>
+      <p style="font-family:var(--f-mono);font-size:.6875rem;color:var(--muted);margin-top:12px;letter-spacing:.06em;">macOS 14 Sonoma or later · Apple Silicon + Intel · Free tier, no account required</p>
     </div>
   </div>
 </section>
 
-<!-- Download -->
-<section id="download">
-  <div class="wrap" style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px">
-    <h2 class="disp" style="max-width:18ch">Record your first take tonight.</h2>
-    <p class="lede" style="text-align:center;max-width:52ch">The free tier is the trial. Download it, plug in a phone, and see the shot before you decide anything.</p>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:4px">
-      <a class="btn btn-primary" href="#download">Download for Mac</a>
-      <a class="btn btn-ghost" href="https://github.com/Skothagattu11/tiltcast-sdk">Read the SDK source</a>
-    </div>
-    <div class="spec">Free &middot; watermarked &middot; no card &middot; Developer ID signed and notarized by Apple</div>
-  </div>
-</section>
-
-</main>
-
+<!-- ── Footer ─────────────────────────────────────────────── -->
 <footer>
   <div class="foot">
-    <div>
-      <a class="mark" href="#top" style="margin-bottom:10px" aria-label="TiltCast, back to top">
-        <svg class="mark-glyph" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path class="g-body" d="M6 7.75 Q6 6.6 7.11 6.298 L17.053 3.594 Q18.5 3.2 18.5 4.7 L18.5 19.3 Q18.5 20.8 17.053 20.406 L7.11 17.702 Q6 17.4 6 16.25 Z"/>
-          <path class="g-edge" d="M17.55 6.15 V17.85"/>
-        </svg>
-        <span class="mark-word">TiltCast</span>
-      </a>
-      <p class="colophon">A product camera for software.<br>macOS 14+ &middot; iOS 16+ &middot; USB</p>
-    </div>
+    <a class="mark" href="#">
+      <svg class="mark-glyph" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path class="g-body" d="M6 7.75 Q6 6.6 7.11 6.298 L17.053 3.594 Q18.5 3.2 18.5 4.7 L18.5 19.3 Q18.5 20.8 17.053 20.406 L7.11 17.702 Q6 17.4 6 16.25 Z"/>
+        <path class="g-edge" d="M17.55 6.15 V17.85"/>
+      </svg>
+      <span class="mark-word">TiltCast</span>
+    </a>
     <div class="foot-links">
-      <a href="#how">Docs</a>
-      <a href="#pricing">Pricing</a>
-      <a href="https://github.com/Skothagattu11/tiltcast-sdk">SDK on GitHub</a>
-      <a href="#faq">Changelog</a>
-      <a href="#faq">Support</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">GitHub</a>
+      <a href="#">Twitter / X</a>
+      <a href="#">Support</a>
     </div>
+    <p class="colophon">© 2025 TiltCast. Made for the builders who ship alone.</p>
   </div>
 </footer>
 
-<script src="/assets/js/rig.js"></script>
+<script type="module" src="assets/js/main.js"></script>
+
+<!-- ── Purchase modal ─────────────────────────────────────── -->
+<div id="purchase-modal" class="pmodal-overlay" hidden aria-modal="true" role="dialog">
+  <div class="pmodal" onclick="event.stopPropagation()">
+    <button class="pmodal-close" onclick="closePurchaseModal()" aria-label="Close">✕</button>
+
+    <div class="pmodal-eyebrow">Founding member offer</div>
+    <h3 class="pmodal-headline">Own TiltCast forever<br>for a one-time price.</h3>
+    <p class="pmodal-sub">Lock in lifetime access before we remove this. No renewals, no price hikes.</p>
+
+    <div class="pmodal-card">
+      <div class="pmodal-price-row">
+        <span class="pmodal-amt">$99</span>
+        <span class="pmodal-label">Lifetime · pay once</span>
+      </div>
+      <ul class="feat" style="margin-top:18px;">
+        <li><span class="ck">✓</span>Everything in Pro</li>
+        <li><span class="ck">✓</span>All future scenes, free forever</li>
+        <li><span class="ck">✓</span>No annual renewal, ever</li>
+        <li><span class="ck">✓</span>Founding member badge in app</li>
+        <li><span class="ck">✓</span>Early access to new features</li>
+      </ul>
+      <button class="btn btn-primary pmodal-cta" onclick="startCheckout('lifetime', this)">Claim Lifetime Access →</button>
+    </div>
+
+    <div class="pmodal-skip-row">
+      <span>Rather start annual?</span>
+      <button class="pmodal-skip-link" onclick="startCheckout('yearly', this)">Continue at $49/yr →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const CHECKOUT_FN = 'https://smyuxmmxadnvufojclpi.supabase.co/functions/v1/checkout-web';
+
+function openPurchaseModal() {
+  const m = document.getElementById('purchase-modal');
+  m.removeAttribute('hidden');
+  document.body.style.overflow = 'hidden';
+}
+function closePurchaseModal() {
+  const m = document.getElementById('purchase-modal');
+  m.setAttribute('hidden', '');
+  document.body.style.overflow = '';
+}
+document.getElementById('purchase-modal').addEventListener('click', closePurchaseModal);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closePurchaseModal(); });
+
+async function startCheckout(plan, btn) {
+  const orig = btn.textContent;
+  btn.textContent = 'Redirecting…';
+  btn.disabled = true;
+  try {
+    const res = await fetch(CHECKOUT_FN, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ plan, origin: window.location.origin }),
+    });
+    const data = await res.json();
+    if (data.url) {
+      window.location.href = data.url;
+    } else {
+      alert('Something went wrong. Please try again.');
+      btn.textContent = orig;
+      btn.disabled = false;
+    }
+  } catch {
+    alert('Network error. Please try again.');
+    btn.textContent = orig;
+    btn.disabled = false;
+  }
+}
+
+// Show success banner when returning from Stripe
+(function() {
+  const p = new URLSearchParams(window.location.search);
+  const plan = p.get('paid');
+  if (!plan) return;
+  const banner = document.getElementById('success-banner');
+  if (banner) {
+    banner.querySelector('.sb-plan').textContent = plan === 'lifetime' ? 'Lifetime' : 'Pro Annual';
+    banner.removeAttribute('hidden');
+    window.history.replaceState({}, '', window.location.pathname + '#pricing');
+  }
+})();
+</script>
 </body>
 </html>
