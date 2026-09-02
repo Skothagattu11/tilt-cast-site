@@ -2,7 +2,7 @@
    Procedural drift, ported from CinematicMotion.swift.
 
    The frequency ratios (0.31 / 0.47 / 0.23) are deliberately
-   incommensurate so the loop never visibly repeats — equal or
+   incommensurate so the loop never visibly repeats, equal or
    harmonic frequencies produce an obvious cycle, which is the tell
    that separates procedural motion from real handheld footage.
    ═══════════════════════════════════════════════════════════════ */
@@ -24,7 +24,7 @@ function makeRig(stageEl, rigEl, glassEl, opts) {
   const drag = !!opts.drag;
 
   // Pointer tracking is decorative, so it gets a spring rather than a
-  // straight lerp — tying rotation directly to cursor position reads as
+  // straight lerp, tying rotation directly to cursor position reads as
   // artificial because it carries no momentum.
   let tgtY = 0, tgtX = 0, curY = 0, curX = 0, velY = 0, velX = 0;
   const STIFF = 110, DAMP = 16;

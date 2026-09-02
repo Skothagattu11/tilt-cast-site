@@ -1,6 +1,6 @@
 /* TiltCast - site styles */
 /* ═══════════════════════════════════════════════════════════════
-   TiltCast — "Anodized"
+   TiltCast, "Anodized"
    Light theme  = White Studio preset   Dark theme = Dark Studio preset
    Accent       = ultramarine, the complement of a tungsten key light
    ═══════════════════════════════════════════════════════════════ */
@@ -10,7 +10,7 @@
   --ground:      #D9DCDE;   /* anodized aluminium */
   --surface:     #E8EAEC;
   --paper:       #F7F8F9;
-  --well:        #0B0D0F;   /* the only true black — holds demos */
+  --well:        #0B0D0F;   /* the only true black, holds demos */
   --well-ink:    #EDEFF0;
   --well-muted:  #7C858B;
 
@@ -158,7 +158,7 @@ p:last-child { margin-bottom: 0; }
   font-variant-numeric: tabular-nums;
 }
 
-/* engraved label — the lens-barrel voice */
+/* engraved label, the lens-barrel voice */
 .spec {
   font-family: var(--f-mono);
   font-size: .6875rem;
@@ -202,7 +202,7 @@ header.nav {
   letter-spacing: -.032em;
   line-height: 1;
 }
-/* The glyph: a screen in perspective — a rectangle that has stopped
+/* The glyph: a screen in perspective, a rectangle that has stopped
    being a rectangle. The accent stroke is the specular highlight the
    raking key light leaves on the near edge. */
 .mark-glyph {
@@ -316,7 +316,7 @@ header.nav {
 .stage:active { cursor: grabbing; }
 .stage.hero-stage { aspect-ratio: 4 / 5; }
 
-/* raking key light from upper-right, mirror floor — Dark Studio */
+/* raking key light from upper-right, mirror floor, Dark Studio */
 .stage::before {
   content: '';
   position: absolute; inset: 0;
