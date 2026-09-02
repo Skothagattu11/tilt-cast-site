@@ -68,8 +68,8 @@ p:last-child { margin-bottom: 0; }
 
 .kicker {
   font-family: var(--f-mono);
-  font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--accent); margin: 0 0 20px; display: block;
+  font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--accent-hi); font-weight: 600; margin: 0 0 20px; display: block;
 }
 
 h2 {
@@ -393,9 +393,9 @@ details p { padding: 0 0 20px; font-size: 0.9375rem; color: var(--ink-2); max-wi
 footer { border-top: 1px solid var(--line-soft); background: var(--bg-2); }
 .foot { max-width: var(--max); margin: 0 auto; padding: 44px var(--gut); display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; justify-content: space-between; }
 .foot-links { display: flex; flex-wrap: wrap; gap: 20px; }
-.foot-links a { font-family: var(--f-mono); font-size: 0.6875rem; color: var(--muted); text-decoration: none; letter-spacing: 0.06em; }
-.foot-links a:hover { color: var(--accent); }
-.colophon { font-family: var(--f-mono); font-size: 0.6875rem; color: var(--muted); line-height: 1.7; max-width: 40ch; }
+.foot-links a { font-family: var(--f-mono); font-size: 0.75rem; font-weight: 600; color: var(--ink-2); text-decoration: none; letter-spacing: 0.06em; }
+.foot-links a:hover { color: var(--accent-hi); }
+.colophon { font-family: var(--f-mono); font-size: 0.75rem; font-weight: 500; color: var(--ink-2); line-height: 1.7; max-width: 40ch; }
 
 /* ── Success banner ──────────────────────────────────────────── */
 .success-banner {
