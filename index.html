@@ -492,13 +492,15 @@
   </div>
 </footer>
 
+<!-- GSAP UMD — loaded before module scripts so window.gsap / window.ScrollTrigger are available -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
 <script type="importmap">
 {
   "imports": {
-    "three":                  "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
-    "three/addons/":          "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/",
-    "gsap":                   "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.esm.js",
-    "gsap/ScrollTrigger":     "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.esm.js"
+    "three":         "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
   }
 }
 </script>

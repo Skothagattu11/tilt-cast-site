@@ -1,5 +1,6 @@
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+// GSAP is loaded as a UMD script (window.gsap / window.ScrollTrigger)
+const gsap = window.gsap
+const { ScrollTrigger } = window
 
 gsap.registerPlugin(ScrollTrigger)
 
